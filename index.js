@@ -1,5 +1,5 @@
 
-//require('dotenv').config();
+require('dotenv').config();
 const express = require('express');
 const sql = require('mssql');
 const { BlobServiceClient } = require('@azure/storage-blob');
@@ -10,7 +10,7 @@ app.use(express.json());
 // Use environment variables instead of hardcoding credentials
 const dbConfig = {
     server: process.env.DB_SERVER || 'my-sqldb.database.windows.net',
-    database: process.env.DB_NAME || 'MyAppDatabase', 
+    database: process.env.DB_NAME || 'MyAppDatabase',
     user: process.env.DB_USER || 'seksit',
     password: process.env.DB_PASSWORD || 'CrZzid4743$',
     options: {
