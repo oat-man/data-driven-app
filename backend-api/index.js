@@ -2,7 +2,7 @@
 require('dotenv').config();
 const express = require('express');
 const sql = require('mssql');
-const { BlobServiceClient } = require('@azure/storage-blob');
+// const { BlobServiceClient } = require('@azure/storage-blob');
 
 const app = express();
 app.use(express.json());
